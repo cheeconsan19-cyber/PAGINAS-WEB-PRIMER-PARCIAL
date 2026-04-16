@@ -1,18 +1,1 @@
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Currículum</title>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Georgia', serif;
-        background-color: #e6e6e6;
-    }
 
-    .container {
-        width: 900px;
-        margin: 40px auto;
-        background: #f7f7f7;
-        display: flex;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1
-  
