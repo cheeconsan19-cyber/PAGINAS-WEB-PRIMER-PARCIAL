@@ -1,1 +1,144 @@
+/* Configuración General */
+:root {
+    --accent-pink: #e4c1c9; /* Color rosado de la referencia */
+    --text-dark: #333;
+    --text-light: #666;
+}
 
+body {
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container {
+    background-color: #fff;
+    width: 800px;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Columna Izquierda */
+.sidebar {
+    padding: 40px 30px;
+    border-right: 1px solid #eee;
+}
+
+.profile-img-container {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* Recreación del cuadro rosa detrás de la foto */
+.profile-img-container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 100px;
+    height: 180px;
+    background-color: var(--accent-pink);
+    z-index: 0;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    position: relative;
+    z-index: 1;
+}
+
+.side-section h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.side-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-section li, .side-section p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: var(--text-light);
+}
+
+/* Barras de idiomas */
+.bar {
+    background: #eee;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.progress {
+    background: var(--accent-pink);
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Columna Derecha */
+.main-content {
+    padding: 60px 40px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+.contact-info i {
+    color: var(--text-dark);
+    width: 20px;
+}
+
+.main-section {
+    margin-top: 40px;
+}
+
+.main-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.main-section p, .experience-list li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+
+.experience-list {
+    padding-left: 20px;
+}
+
+.disclaimer {
+    font-style: italic;
+    margin-top: 15px;
+}
