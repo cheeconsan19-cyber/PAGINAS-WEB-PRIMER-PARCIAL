@@ -6,7 +6,185 @@
     <title>CV - Cherlize Contreras</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Estilos integrados para que funcione en un solo archivo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #e0e0e0;
+            padding: 20px 0;
+        }
+
+        .cv-page {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            align-items: stretch;
+            background-color: #ffffff;
+        }
+
+        .photo-container {
+            width: 35%;
+            background-color: #e6cbd3;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-color: #ccc; /* Color temporal si no hay imagen */
+        }
+
+        .name-container {
+            width: 65%;
+            display: flex;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .name-wrapper {
+            text-align: left;
+        }
+
+        .name-container h1 {
+            font-size: 32px;
+            font-weight: 400;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .professional-title {
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .name-underline {
+            width: 60px;
+            height: 3px;
+            background-color: #d1a7b5;
+            margin-top: 15px;
+        }
+
+        /* CONTENIDO */
+        .content-wrapper {
+            display: flex;
+        }
+
+        .left-column {
+            width: 35%;
+            background-color: #e6cbd3;
+            padding: 20px 30px;
+            min-height: 600px;
+        }
+
+        .right-column {
+            width: 65%;
+            padding: 40px;
+        }
+
+        h3 {
+            color: #444;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            margin-top: 25px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .right-column h3 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .description-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        li, p {
+            font-size: 13px;
+            margin-bottom: 8px;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .compact-list {
+            padding-left: 18px;
+        }
+
+        .subtitle {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .date-range {
+            color: #888;
+            font-size: 12px;
+        }
+
+        .note {
+            font-size: 11px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+        }
+
+        .contact-list i {
+            color: #333;
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        /* Responsivo para celulares */
+        @media (max-width: 768px) {
+            .header, .content-wrapper { flex-direction: column; }
+            .photo-container, .name-container, .left-column, .right-column { width: 100%; }
+            .left-column { min-height: auto; }
+        }
+    </style>
 </head>
 <body>
 
@@ -99,4 +277,3 @@
 
 </body>
 </html>
-      <link rel="stylesheet" href="style.css">
