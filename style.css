@@ -1,3 +1,5 @@
+/* style.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-    background-color: #e0e0e0;
+    background-color: #f4f4f4; /* Fondo gris claro para resaltar el CV */
     padding: 20px 0;
 }
 
@@ -28,7 +30,7 @@ body {
 
 .photo-container {
     width: 35%;
-    background-color: #e6cbd3; /* Rosa suave de la imagen */
+    background-color: #e6cbd3; /* Color rosa del diseño */
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -39,7 +41,7 @@ body {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border-radius: 50%; /* Foto circular como en el diseño */
+    border-radius: 50%; /* Forma circular */
     border: 5px solid white;
 }
 
@@ -59,6 +61,7 @@ body {
     font-weight: 400;
     color: #333;
     margin-bottom: 5px;
+    text-transform: none; /* Respeta mayúsculas/minúsculas */
 }
 
 .professional-title {
@@ -71,20 +74,20 @@ body {
 .name-underline {
     width: 60px;
     height: 3px;
-    background-color: #d1a7b5;
+    background-color: #d1a7b5; /* Línea rosa oscuro */
     margin-top: 15px;
 }
 
-/* CONTENIDO */
+/* ESTRUCTURA DE COLUMNAS */
 .content-wrapper {
     display: flex;
 }
 
 .left-column {
     width: 35%;
-    background-color: #e6cbd3;
+    background-color: #e6cbd3; /* Mismo rosa que el header */
     padding: 20px 30px;
-    min-height: 600px;
+    min-height: 650px;
 }
 
 .right-column {
@@ -92,6 +95,7 @@ body {
     padding: 40px;
 }
 
+/* TÍTULOS DE SECCIÓN */
 h3 {
     color: #444;
     font-size: 13px;
@@ -102,7 +106,7 @@ h3 {
     text-transform: uppercase;
 }
 
-/* Ajuste específico para títulos en columna derecha */
+/* Línea divisoria solo en la columna derecha */
 .right-column h3 {
     border-bottom: 1px solid #eee;
     padding-bottom: 5px;
@@ -112,6 +116,7 @@ section {
     margin-bottom: 20px;
 }
 
+/* TEXTOS */
 .description-text {
     font-size: 13px;
     line-height: 1.6;
@@ -151,7 +156,7 @@ li, p {
     margin-top: 10px;
 }
 
-/* CONTACTO */
+/* CONTACTO (Iconos) */
 .contact-list {
     list-style: none;
 }
@@ -160,6 +165,7 @@ li, p {
     display: flex;
     align-items: center;
     font-size: 12px;
+    margin-bottom: 10px;
 }
 
 .contact-list i {
@@ -168,8 +174,15 @@ li, p {
     margin-right: 10px;
 }
 
+/* RESPONSIVO (Móviles) */
 @media (max-width: 768px) {
-    .header, .content-wrapper { flex-direction: column; }
-    .photo-container, .name-container, .left-column, .right-column { width: 100%; }
-    .left-column { min-height: auto; }
+    .header, .content-wrapper { 
+        flex-direction: column; 
+    }
+    .photo-container, .name-container, .left-column, .right-column { 
+        width: 100%; 
+    }
+    .left-column { 
+        min-height: auto; 
+    }
 }
